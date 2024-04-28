@@ -35,7 +35,7 @@ def distancia(fila,y_i,x_i):
 def meteo_to_c2f(alfa):
     if alfa>=0 and alfa<180:
         theta=alfa+180
-    elif alfa>=180 and alfa<360:
+    elif alfa>=180 and alfa<=360:
         theta=alfa-180
     else:
         theta=math.nan
