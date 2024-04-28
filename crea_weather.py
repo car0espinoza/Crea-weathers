@@ -26,7 +26,10 @@ dn=3
 funciones
 """
 def distancia(fila,y_i,x_i):
-    dis=math.sqrt((fila["lat"]-y_i)**2+(fila["lon"]-x_i)**2)
+    if y_i==fila["lat"] and x_i== fila["lon"]:
+        dis=0
+    else:
+        dis=math.sqrt((fila["lat"]-y_i)**2+(fila["lon"]-x_i)**2)
     return dis
 
 def meteo_to_c2f(alfa):
