@@ -7,8 +7,7 @@ import random
 ruta_stn="./datos_post/Estaciones.csv"
 #Ruta a los datos de estaciones
 ruta_data="./datos_post/"
-# Carpeta de salida
-ruta_out="./weather/"
+
 
 
 
@@ -76,5 +75,5 @@ for i in range(count):
     weather["RH"] = meteo[j]["RH [%]"].iloc[m:m + T].tolist()
 
     # print(weather)
-    weather.to_csv(ruta_out + "weather"+str(i+1)+".csv", index=False)
+    weather.to_csv("weather"+str(i+1)+".csv", index=False)
 
